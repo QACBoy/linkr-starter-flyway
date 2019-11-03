@@ -37,13 +37,14 @@ public class FlywayProperties {
     public FlywayProperties() {
     }
 
-    public FlywayProperties(String url, String username, String password, Boolean startEnable, Boolean baselineOnMigrate, Boolean cleanDisabled, List<String> locations) {
+    public FlywayProperties(String url, String username, String password, Boolean startEnable, Boolean baselineOnMigrate, Boolean cleanDisabled, Boolean enable, List<String> locations) {
         this.url = url;
         this.username = username;
         this.password = password;
         this.startEnable = startEnable;
         this.baselineOnMigrate = baselineOnMigrate;
         this.cleanDisabled = cleanDisabled;
+        this.enable = enable;
         this.locations = locations;
     }
 
